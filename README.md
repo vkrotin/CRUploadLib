@@ -3,10 +3,10 @@
 # CRUploadLib
 
 The library is designed for sending large media files to the server
-![](Screens/IMG_0047.jpg | width=100)
-![](Screens/IMG_0048.jpg | width=100)
 
-<img src="https://github.com/vkrotin/CRUploadLib/blob/main/Screens/IMG_0047.jpg" width="100">
+
+<img src="https://github.com/vkrotin/CRUploadLib/blob/main/Screens/IMG_0047.jpg" width="400">
+<img src="https://github.com/vkrotin/CRUploadLib/blob/main/Screens/IMG_0048.jpg" width="400">
 
 ## Example
 
