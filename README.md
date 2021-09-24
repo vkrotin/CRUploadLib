@@ -1,10 +1,16 @@
+![](https://img.shields.io/badge/CR-iOS%20Upload%20library-informational)
+
 # CRUploadLib
 
 The library is designed for sending large media files to the server
+![](Screens/IMG_0047.jpg)
+![](Screens/IMG_0048.jpg)
 
 ## Example
 
 To run the example project
+
+
 
 
 ## Installation
