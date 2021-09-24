@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testLib" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HTv-3b-uyy">
+                                <rect key="frame" x="16" y="128" width="382" height="223"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HTv-3b-uyy" secondAttribute="height" multiplier="12:7" id="sYL-fb-RYP"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ovt-gl-zrK">
+                                <rect key="frame" x="16" y="381" width="382" height="471"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MPP-Gn-Qk5">
+                                <rect key="frame" x="16" y="361" width="382" height="4"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZq-v6-aPq">
+                                <rect key="frame" x="16" y="373" width="382" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="z56-oY-jJn">
+                                <rect key="frame" x="20" y="44" width="374" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtJ-u0-Ono">
+                                        <rect key="frame" x="0.0" y="0.0" width="119.5" height="44"/>
+                                        <state key="normal" title="Select File"/>
+                                        <connections>
+                                            <action selector="testTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSG-zU-Z7q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hc-ct-6FE">
+                                        <rect key="frame" x="127.5" y="0.0" width="119" height="44"/>
+                                        <state key="normal" title="Pause"/>
+                                        <connections>
+                                            <action selector="pauseResumeTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yu3-d2-yvs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceu-4g-15j">
+                                        <rect key="frame" x="254.5" y="0.0" width="119.5" height="44"/>
+                                        <state key="normal" title="Remove"/>
+                                        <connections>
+                                            <action selector="removeFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y8t-GF-v3Q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="qBe-ji-vL3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GZq-v6-aPq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="2gl-se-jgE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MPP-Gn-Qk5" secondAttribute="trailing" constant="16" id="HGH-7y-SSP"/>
+                            <constraint firstItem="HTv-3b-uyy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I2C-WK-fSu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z56-oY-jJn" secondAttribute="trailing" constant="20" id="JMz-7z-C8H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GZq-v6-aPq" secondAttribute="trailing" constant="16" id="M5p-S1-fIU"/>
+                            <constraint firstItem="z56-oY-jJn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="N5S-xz-qkp"/>
+                            <constraint firstItem="Ovt-gl-zrK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Pso-FB-04N"/>
+                            <constraint firstItem="HTv-3b-uyy" firstAttribute="top" secondItem="z56-oY-jJn" secondAttribute="bottom" constant="40" id="STt-Cx-VC5"/>
+                            <constraint firstItem="z56-oY-jJn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Stl-ZM-iHg"/>
+                            <constraint firstItem="HTv-3b-uyy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="U0f-Ig-hwm"/>
+                            <constraint firstItem="GZq-v6-aPq" firstAttribute="top" secondItem="MPP-Gn-Qk5" secondAttribute="bottom" constant="8" symbolic="YES" id="Yqn-G8-2oH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ovt-gl-zrK" secondAttribute="trailing" constant="16" id="b9e-FP-BOo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ovt-gl-zrK" secondAttribute="bottom" constant="10" id="dIk-jg-yAI"/>
+                            <constraint firstItem="MPP-Gn-Qk5" firstAttribute="top" secondItem="HTv-3b-uyy" secondAttribute="bottom" constant="10" id="gEI-a1-yNh"/>
+                            <constraint firstItem="Ovt-gl-zrK" firstAttribute="top" secondItem="GZq-v6-aPq" secondAttribute="bottom" constant="8" id="gdq-vQ-bMR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HTv-3b-uyy" secondAttribute="trailing" constant="16" id="myK-HA-Bxu"/>
+                            <constraint firstItem="MPP-Gn-Qk5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="pef-a3-jPH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="HTv-3b-uyy" id="5sI-uc-2wo"/>
+                        <outlet property="pauseButton" destination="8hc-ct-6FE" id="N6a-Xx-QIn"/>
+                        <outlet property="progressLabel" destination="GZq-v6-aPq" id="YlL-u2-ltO"/>
+                        <outlet property="progressView" destination="MPP-Gn-Qk5" id="COB-M0-q56"/>
+                        <outlet property="textView" destination="Ovt-gl-zrK" id="ioe-tg-l3M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-757.97101449275374" y="92.410714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

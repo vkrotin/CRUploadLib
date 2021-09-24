@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CRUploadLib",
+        "repositoryURL": "https://github.com/vkrotin/CRUploadLib",
+        "state": {
+          "branch": null,
+          "revision": "e19202ff052e5a7b6642447cd324f4385e4a2a47",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
