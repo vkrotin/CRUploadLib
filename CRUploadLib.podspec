@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = 'CRUploadLib'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'iOS library for upload media files in server'
   
   
