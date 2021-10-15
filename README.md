@@ -4,9 +4,7 @@
 
 The library is designed for sending large media files to the server
 
-!https://bitbucket.org/cyrm/cruploadlib-ios/src/b194eb87b633/Screens/IMG_0047.jpg!
-
-![Scheme](Screens/IMG_0047.jpg) ![Scheme](Screens/IMG_0048.jpg) 
+![Scheme](Screens/IMG_0047.jpg){width=400px} ![Scheme](Screens/IMG_0048.jpg){width=400px} 
 
 
 ## Example
