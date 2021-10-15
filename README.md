@@ -4,8 +4,7 @@
 
 The library is designed for sending large media files to the server
 
-
-<img src="https://github.com/vkrotin/CRUploadLib/blob/main/Screens/IMG_0047.jpg" width="400"> <img src="https://github.com/vkrotin/CRUploadLib/blob/main/Screens/IMG_0048.jpg" width="400">
+![Scheme](Screens/IMG_0047.jpg){height=200 width=200} ![Scheme](Screens/IMG_0048.jpg){height=200 width=200}
 
 
 ## Example
